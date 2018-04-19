@@ -1,0 +1,17 @@
+/*
+orange: #FC4C02
+purple: #24135F
+red:    #E03A3E
+gold:   #886B25
+gold2:  #FFD520
+*/
+
+html {
+    background-color: #24135F;
+    color: #FC4C02;
+}
+
+main {
+    margin: 0 auto;
+    width: 70%;
+}
