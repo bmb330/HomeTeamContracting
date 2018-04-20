@@ -5,13 +5,114 @@ red:    #E03A3E
 gold:   #886B25
 gold2:  #FFD520
 */
+@import url('https://fonts.googleapis.com/css?family=Engagement');
 
-html {
+body {
     background-color: #24135F;
+    color: #141414;
+    font: 16px/1.8rem Verdana, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
     color: #FC4C02;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 main {
-    margin: 0 auto;
-    width: 70%;
+    background-color: #F9F9F9;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+header {
+    background-color: #24135F;
+    background-image: url('../images/header.jpg');
+    background-position: center;
+    overflow: hidden;
+}
+
+header > h1 {
+    font-family: 'Engagement';
+    margin: 0 0 0.5rem;
+    padding: 1rem 2rem 0;
+}
+
+.contact-bar {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem 2rem;
+    overflow: hidden;
+}
+
+.contact-bar-item {
+    color: #E03A3E;
+    display: block;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 0.2rem #24135F;
+}
+
+a {
+    color: #FFD520;
+    text-decoration: none;
+}
+
+address {
+    color: #FC4C02;
+    font-weight: bold;
+    padding: 0 2.5rem;
+}
+
+section {
+    margin: 0 1.5rem;
+}
+
+section > h2 {
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+ul {
+    overflow: hidden;
+}
+
+ul > li {
+    list-style-image: url('../images/baseball.png');
+}
+
+@media only screen and (min-device-width: 420px) {
+    main {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    header > h1 {
+        font-size: 3.5rem;
+        margin: 1rem 0 1rem;
+    }
+
+    .contact-bar-item {
+        float: left;
+        width: 50%;
+    }
+
+    .contact-bar-item:last-child {
+        text-align: right;
+    }
+
+    ul > li {
+        float: left;
+        width: 50%;
+    }
+
+    section {
+        margin: 0 1rem 1rem;
+    }
+
+    section > p {
+        margin: 0 1.2rem;
+    }
 }
