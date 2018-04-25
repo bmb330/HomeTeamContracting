@@ -1,7 +1,27 @@
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap */
 body {
     padding-top: 56px;
 }
 
+a {
+    text-decoration: none;
+    color: #E03A3E;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 4rem;
+}
+
+section > header {
+    padding-bottom: 2rem;
+}
+
+/* Branding */
 .brand-bg-color {
     background-color: #24135F !important;
 }
@@ -14,11 +34,98 @@ body {
     color: #FC4C02 !important;
 }
 
+.brand-link-color {
+    color: #E03A3E;
+}
+
+/* Carousel */
 .carousel-item > .container {
-    padding: 4rem 0;
+    padding-top: 50px;
+    height: 560px;
 }
 
 .carousel-item h1 {
     font-size: 2rem;
-    padding: 1rem 0;
+}
+
+.carousel-item h1, p {
+    margin: 1rem;
+    text-align: center;
+}
+
+/* Services */
+#services ul li {
+    text-align: center;
+}
+
+#services .row:last-child .list-group-item:last-child {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* Call to Action */
+#callToAction {
+    text-align: center;
+}
+
+#callToAction > .jumbotron {
+    background-image: url("../img/call-to-action.jpg");
+    background-position: 0px 0px, 0px 0px;
+    background-size: cover, auto;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 115px 20px;
+    text-shadow: 1px 1px 6px #000;
+}
+
+#callToAction > .banner {
+    padding: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 1.6rem;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+}
+
+footer .copyrite {
+    padding-top: 1rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #services ul li {
+        text-align: justify;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .carousel-item > .container {
+        height: 360px;
+    }
+
+    .carousel-item h1, p {
+        text-align: left;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel-item > .container {
+        height: 440px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
